@@ -192,6 +192,29 @@ body {
     display: none;
 }
 
+/* Фон для первого слайда */
+.slide[data-slide="1"] {
+    background: url("IMG_9524.jpg") center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide[data-slide="1"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.slide[data-slide="1"] .slide-content {
+    position: relative;
+    z-index: 2;
+}
+
 /* Slide Numbers */
 .slide-number {
     position: absolute;
