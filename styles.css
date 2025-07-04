@@ -105,6 +105,153 @@ body {
     opacity: 0.3;
 }
 
+/* Градиентные размытые облачка */
+.gradient-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.4;
+    z-index: -1;
+    animation: float 6s ease-in-out infinite;
+}
+
+.gradient-blob.blob-1 {
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    left: 15%;
+    animation-delay: 0s;
+}
+
+.gradient-blob.blob-2 {
+    width: 250px;
+    height: 250px;
+    top: 60%;
+    right: 20%;
+    animation-delay: 2s;
+}
+
+.gradient-blob.blob-3 {
+    width: 200px;
+    height: 200px;
+    top: 30%;
+    left: 60%;
+    animation-delay: 4s;
+}
+
+/* Анимация плавания облачков */
+@keyframes float {
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg); 
+    }
+    33% { 
+        transform: translateY(-20px) rotate(1deg); 
+    }
+    66% { 
+        transform: translateY(10px) rotate(-1deg); 
+    }
+}
+
+/* Цветовые схемы для разных слайдов */
+/* Титульный слайд - нейтральный серый */
+.slide[data-slide="1"] .gradient-blob.blob-1 {
+    background: radial-gradient(circle, rgba(150, 150, 150, 0.3) 0%, rgba(100, 100, 100, 0.1) 70%);
+}
+.slide[data-slide="1"] .gradient-blob.blob-2 {
+    background: radial-gradient(circle, rgba(200, 200, 200, 0.25) 0%, rgba(150, 150, 150, 0.1) 70%);
+}
+.slide[data-slide="1"] .gradient-blob.blob-3 {
+    background: radial-gradient(circle, rgba(255, 107, 61, 0.2) 0%, rgba(255, 107, 61, 0.05) 70%);
+}
+
+/* Статистика - красный (опасность) */
+.slide[data-slide="2"] .gradient-blob.blob-1 {
+    background: radial-gradient(circle, rgba(255, 71, 87, 0.4) 0%, rgba(220, 20, 60, 0.1) 70%);
+}
+.slide[data-slide="2"] .gradient-blob.blob-2 {
+    background: radial-gradient(circle, rgba(255, 107, 61, 0.3) 0%, rgba(255, 69, 0, 0.1) 70%);
+}
+.slide[data-slide="2"] .gradient-blob.blob-3 {
+    background: radial-gradient(circle, rgba(139, 0, 0, 0.3) 0%, rgba(178, 34, 34, 0.1) 70%);
+}
+
+/* Восстановление - зеленый (здоровье) */
+.slide[data-slide="3"] .gradient-blob.blob-1 {
+    background: radial-gradient(circle, rgba(46, 213, 115, 0.4) 0%, rgba(0, 255, 127, 0.1) 70%);
+}
+.slide[data-slide="3"] .gradient-blob.blob-2 {
+    background: radial-gradient(circle, rgba(0, 200, 83, 0.3) 0%, rgba(32, 201, 151, 0.1) 70%);
+}
+.slide[data-slide="3"] .gradient-blob.blob-3 {
+    background: radial-gradient(circle, rgba(85, 239, 196, 0.25) 0%, rgba(129, 236, 236, 0.1) 70%);
+}
+
+/* Болезни - темно-красный (критично) */
+.slide[data-slide="4"] .gradient-blob.blob-1 {
+    background: radial-gradient(circle, rgba(139, 0, 0, 0.4) 0%, rgba(165, 42, 42, 0.15) 70%);
+}
+.slide[data-slide="4"] .gradient-blob.blob-2 {
+    background: radial-gradient(circle, rgba(220, 20, 60, 0.35) 0%, rgba(255, 69, 0, 0.1) 70%);
+}
+.slide[data-slide="4"] .gradient-blob.blob-3 {
+    background: radial-gradient(circle, rgba(128, 0, 0, 0.3) 0%, rgba(102, 0, 0, 0.1) 70%);
+}
+
+/* Экономический ущерб - золотой/желтый (деньги) */
+.slide[data-slide="5"] .gradient-blob.blob-1 {
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.4) 0%, rgba(255, 193, 7, 0.15) 70%);
+}
+.slide[data-slide="5"] .gradient-blob.blob-2 {
+    background: radial-gradient(circle, rgba(255, 165, 0, 0.35) 0%, rgba(255, 140, 0, 0.1) 70%);
+}
+.slide[data-slide="5"] .gradient-blob.blob-3 {
+    background: radial-gradient(circle, rgba(218, 165, 32, 0.3) 0%, rgba(184, 134, 11, 0.1) 70%);
+}
+
+/* Пассивное курение - фиолетовый (семья) */
+.slide[data-slide="6"] .gradient-blob.blob-1 {
+    background: radial-gradient(circle, rgba(138, 43, 226, 0.4) 0%, rgba(147, 112, 219, 0.15) 70%);
+}
+.slide[data-slide="6"] .gradient-blob.blob-2 {
+    background: radial-gradient(circle, rgba(186, 85, 211, 0.35) 0%, rgba(221, 160, 221, 0.1) 70%);
+}
+.slide[data-slide="6"] .gradient-blob.blob-3 {
+    background: radial-gradient(circle, rgba(148, 0, 211, 0.3) 0%, rgba(153, 50, 204, 0.1) 70%);
+}
+
+/* Мифы - синий (информация) */
+.slide[data-slide="7"] .gradient-blob.blob-1 {
+    background: radial-gradient(circle, rgba(30, 144, 255, 0.4) 0%, rgba(65, 105, 225, 0.15) 70%);
+}
+.slide[data-slide="7"] .gradient-blob.blob-2 {
+    background: radial-gradient(circle, rgba(0, 191, 255, 0.35) 0%, rgba(135, 206, 250, 0.1) 70%);
+}
+.slide[data-slide="7"] .gradient-blob.blob-3 {
+    background: radial-gradient(circle, rgba(70, 130, 180, 0.3) 0%, rgba(100, 149, 237, 0.1) 70%);
+}
+
+/* Как бросить - зеленый (надежда) */
+.slide[data-slide="8"] .gradient-blob.blob-1 {
+    background: radial-gradient(circle, rgba(46, 213, 115, 0.4) 0%, rgba(0, 230, 118, 0.15) 70%);
+}
+.slide[data-slide="8"] .gradient-blob.blob-2 {
+    background: radial-gradient(circle, rgba(85, 239, 196, 0.35) 0%, rgba(129, 236, 236, 0.1) 70%);
+}
+.slide[data-slide="8"] .gradient-blob.blob-3 {
+    background: radial-gradient(circle, rgba(16, 172, 132, 0.3) 0%, rgba(39, 174, 96, 0.1) 70%);
+}
+
+/* Заключение - градиент сине-зеленый (позитив) */
+.slide[data-slide="9"] .gradient-blob.blob-1 {
+    background: radial-gradient(circle, rgba(46, 213, 115, 0.4) 0%, rgba(0, 216, 255, 0.15) 70%);
+}
+.slide[data-slide="9"] .gradient-blob.blob-2 {
+    background: radial-gradient(circle, rgba(0, 191, 255, 0.35) 0%, rgba(85, 239, 196, 0.1) 70%);
+}
+.slide[data-slide="9"] .gradient-blob.blob-3 {
+    background: radial-gradient(circle, rgba(129, 236, 236, 0.3) 0%, rgba(116, 185, 255, 0.1) 70%);
+}
+
 .wireframe-skull {
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 10 C30 10 15 25 15 45 C15 65 20 75 25 80 L75 80 C80 75 85 65 85 45 C85 25 70 10 50 10 Z M35 35 C35 30 30 25 25 25 C20 25 15 30 15 35 M65 35 C65 30 70 25 75 25 C80 25 85 30 85 35" stroke="%23ffffff" stroke-width="1" fill="none"/></svg>') no-repeat center;
     background-size: contain;
