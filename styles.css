@@ -209,6 +209,22 @@ body {
     color: #ffffff;
 }
 
+/* Зеленые номера для слайдов 4-6 */
+.slide[data-slide="4"] .slide-number,
+.slide[data-slide="5"] .slide-number,
+.slide[data-slide="6"] .slide-number {
+    border-color: #46d573;
+    color: #46d573;
+}
+
+/* Синие номера для слайдов 7-9 */
+.slide[data-slide="7"] .slide-number,
+.slide[data-slide="8"] .slide-number,
+.slide[data-slide="9"] .slide-number {
+    border-color: #1e90ff;
+    color: #1e90ff;
+}
+
 /* Wireframe Elements */
 .wireframe-element {
     position: absolute;
@@ -416,6 +432,34 @@ body {
     text-shadow: none;
 }
 
+/* Зеленые карточки для слайдов 4-6 */
+.slide[data-slide="4"] .stat-item,
+.slide[data-slide="5"] .stat-item,
+.slide[data-slide="6"] .stat-item {
+    background: rgba(70, 213, 115, 0.1);
+    border-color: #46d573;
+}
+
+.slide[data-slide="4"] .big-number,
+.slide[data-slide="5"] .big-number,
+.slide[data-slide="6"] .big-number {
+    color: #46d573;
+}
+
+/* Синие карточки для слайдов 7-9 */
+.slide[data-slide="7"] .stat-item,
+.slide[data-slide="8"] .stat-item,
+.slide[data-slide="9"] .stat-item {
+    background: rgba(30, 144, 255, 0.1);
+    border-color: #1e90ff;
+}
+
+.slide[data-slide="7"] .big-number,
+.slide[data-slide="8"] .big-number,
+.slide[data-slide="9"] .big-number {
+    color: #1e90ff;
+}
+
 /* Timeline */
 .timeline {
     display: flex;
@@ -441,6 +485,34 @@ body {
     color: #ff6b3d;
     min-width: 150px;
     text-align: left;
+}
+
+/* Зеленые timeline для слайдов 4-6 */
+.slide[data-slide="4"] .timeline-item,
+.slide[data-slide="5"] .timeline-item,
+.slide[data-slide="6"] .timeline-item {
+    background: rgba(70, 213, 115, 0.1);
+    border-color: #46d573;
+}
+
+.slide[data-slide="4"] .time,
+.slide[data-slide="5"] .time,
+.slide[data-slide="6"] .time {
+    color: #46d573;
+}
+
+/* Синие timeline для слайдов 7-9 */
+.slide[data-slide="7"] .timeline-item,
+.slide[data-slide="8"] .timeline-item,
+.slide[data-slide="9"] .timeline-item {
+    background: rgba(30, 144, 255, 0.1);
+    border-color: #1e90ff;
+}
+
+.slide[data-slide="7"] .time,
+.slide[data-slide="8"] .time,
+.slide[data-slide="9"] .time {
+    color: #1e90ff;
 }
 
 .effect {
@@ -469,6 +541,22 @@ body {
 .disease-item.moderate {
     background: rgba(255, 107, 61, 0.1);
     border-color: #ff6b3d;
+}
+
+/* Зеленые болезни для слайдов 4-6 */
+.slide[data-slide="4"] .disease-item,
+.slide[data-slide="5"] .disease-item,
+.slide[data-slide="6"] .disease-item {
+    background: rgba(70, 213, 115, 0.1);
+    border-color: #46d573;
+}
+
+/* Синие болезни для слайдов 7-9 */
+.slide[data-slide="7"] .disease-item,
+.slide[data-slide="8"] .disease-item,
+.slide[data-slide="9"] .disease-item {
+    background: rgba(30, 144, 255, 0.1);
+    border-color: #1e90ff;
 }
 
 .organ {
@@ -501,12 +589,56 @@ body {
     margin-bottom: 10px;
 }
 
+/* Зеленые деньги для слайдов 4-6 */
+.slide[data-slide="4"] .money-item,
+.slide[data-slide="5"] .money-item,
+.slide[data-slide="6"] .money-item {
+    background: rgba(70, 213, 115, 0.1);
+    border-color: #46d573;
+}
+
+.slide[data-slide="4"] .amount,
+.slide[data-slide="5"] .amount,
+.slide[data-slide="6"] .amount {
+    color: #46d573;
+}
+
+/* Синие деньги для слайдов 7-9 */
+.slide[data-slide="7"] .money-item,
+.slide[data-slide="8"] .money-item,
+.slide[data-slide="9"] .money-item {
+    background: rgba(30, 144, 255, 0.1);
+    border-color: #1e90ff;
+}
+
+.slide[data-slide="7"] .amount,
+.slide[data-slide="8"] .amount,
+.slide[data-slide="9"] .amount {
+    color: #1e90ff;
+}
+
 .could-buy {
     margin-top: 40px;
     padding: 30px;
     background: rgba(255, 107, 61, 0.1);
     border-radius: 20px;
     border: 2px solid #ff6b3d;
+}
+
+/* Зеленые could-buy для слайдов 4-6 */
+.slide[data-slide="4"] .could-buy,
+.slide[data-slide="5"] .could-buy,
+.slide[data-slide="6"] .could-buy {
+    background: rgba(70, 213, 115, 0.1);
+    border-color: #46d573;
+}
+
+/* Синие could-buy для слайдов 7-9 */
+.slide[data-slide="7"] .could-buy,
+.slide[data-slide="8"] .could-buy,
+.slide[data-slide="9"] .could-buy {
+    background: rgba(30, 144, 255, 0.1);
+    border-color: #1e90ff;
 }
 
 .alternatives {
@@ -531,6 +663,34 @@ body {
     transform: translateY(-2px);
 }
 
+/* Зеленые alternatives для слайдов 4-6 */
+.slide[data-slide="4"] .alternatives span,
+.slide[data-slide="5"] .alternatives span,
+.slide[data-slide="6"] .alternatives span {
+    background: rgba(70, 213, 115, 0.1);
+    border-color: #46d573;
+}
+
+.slide[data-slide="4"] .alternatives span:hover,
+.slide[data-slide="5"] .alternatives span:hover,
+.slide[data-slide="6"] .alternatives span:hover {
+    background: rgba(70, 213, 115, 0.2);
+}
+
+/* Синие alternatives для слайдов 7-9 */
+.slide[data-slide="7"] .alternatives span,
+.slide[data-slide="8"] .alternatives span,
+.slide[data-slide="9"] .alternatives span {
+    background: rgba(30, 144, 255, 0.1);
+    border-color: #1e90ff;
+}
+
+.slide[data-slide="7"] .alternatives span:hover,
+.slide[data-slide="8"] .alternatives span:hover,
+.slide[data-slide="9"] .alternatives span:hover {
+    background: rgba(30, 144, 255, 0.2);
+}
+
 /* Passive Smoking */
 .passive-smoking {
     display: flex;
@@ -546,6 +706,22 @@ body {
     flex: 1;
     border: 2px solid #ff6b3d;
     transition: all 0.3s ease;
+}
+
+/* Зеленые victim-group для слайдов 4-6 */
+.slide[data-slide="4"] .victim-group,
+.slide[data-slide="5"] .victim-group,
+.slide[data-slide="6"] .victim-group {
+    background: rgba(70, 213, 115, 0.1);
+    border-color: #46d573;
+}
+
+/* Синие victim-group для слайдов 7-9 */
+.slide[data-slide="7"] .victim-group,
+.slide[data-slide="8"] .victim-group,
+.slide[data-slide="9"] .victim-group {
+    background: rgba(30, 144, 255, 0.1);
+    border-color: #1e90ff;
 }
 
 .victim-group .icon {
@@ -577,6 +753,22 @@ body {
     border: 2px solid #ff6b3d;
     margin-top: 30px;
     font-size: 1.2rem;
+}
+
+/* Зеленые fact-box для слайдов 4-6 */
+.slide[data-slide="4"] .fact-box,
+.slide[data-slide="5"] .fact-box,
+.slide[data-slide="6"] .fact-box {
+    background: rgba(70, 213, 115, 0.1);
+    border-color: #46d573;
+}
+
+/* Синие fact-box для слайдов 7-9 */
+.slide[data-slide="7"] .fact-box,
+.slide[data-slide="8"] .fact-box,
+.slide[data-slide="9"] .fact-box {
+    background: rgba(30, 144, 255, 0.1);
+    border-color: #1e90ff;
 }
 
 /* Myths vs Reality */
@@ -611,6 +803,50 @@ body {
     border: 2px solid #ff6b3d;
 }
 
+/* Зеленые мифы для слайдов 4-6 */
+.slide[data-slide="4"] .myth-item,
+.slide[data-slide="5"] .myth-item,
+.slide[data-slide="6"] .myth-item {
+    background: rgba(70, 213, 115, 0.05);
+    border-color: rgba(70, 213, 115, 0.2);
+}
+
+.slide[data-slide="4"] .myth,
+.slide[data-slide="5"] .myth,
+.slide[data-slide="6"] .myth {
+    background: rgba(70, 213, 115, 0.1);
+    border-color: #46d573;
+}
+
+.slide[data-slide="4"] .reality,
+.slide[data-slide="5"] .reality,
+.slide[data-slide="6"] .reality {
+    background: rgba(70, 213, 115, 0.1);
+    border-color: #46d573;
+}
+
+/* Синие мифы для слайдов 7-9 */
+.slide[data-slide="7"] .myth-item,
+.slide[data-slide="8"] .myth-item,
+.slide[data-slide="9"] .myth-item {
+    background: rgba(30, 144, 255, 0.05);
+    border-color: rgba(30, 144, 255, 0.2);
+}
+
+.slide[data-slide="7"] .myth,
+.slide[data-slide="8"] .myth,
+.slide[data-slide="9"] .myth {
+    background: rgba(30, 144, 255, 0.1);
+    border-color: #1e90ff;
+}
+
+.slide[data-slide="7"] .reality,
+.slide[data-slide="8"] .reality,
+.slide[data-slide="9"] .reality {
+    background: rgba(30, 144, 255, 0.1);
+    border-color: #1e90ff;
+}
+
 /* Quit Methods */
 .quit-methods {
     display: grid;
@@ -625,6 +861,22 @@ body {
     border-radius: 20px;
     border: 2px solid #ff6b3d;
     transition: all 0.3s ease;
+}
+
+/* Зеленые method для слайдов 4-6 */
+.slide[data-slide="4"] .method,
+.slide[data-slide="5"] .method,
+.slide[data-slide="6"] .method {
+    background: rgba(70, 213, 115, 0.1);
+    border-color: #46d573;
+}
+
+/* Синие method для слайдов 7-9 */
+.slide[data-slide="7"] .method,
+.slide[data-slide="8"] .method,
+.slide[data-slide="9"] .method {
+    background: rgba(30, 144, 255, 0.1);
+    border-color: #1e90ff;
 }
 
 .method-icon {
@@ -686,6 +938,34 @@ body {
     text-align: center;
 }
 
+/* Зеленые choice для слайдов 4-6 */
+.slide[data-slide="4"] .choice,
+.slide[data-slide="5"] .choice,
+.slide[data-slide="6"] .choice {
+    background: rgba(70, 213, 115, 0.1);
+    border-color: #46d573;
+}
+
+.slide[data-slide="4"] .vs,
+.slide[data-slide="5"] .vs,
+.slide[data-slide="6"] .vs {
+    color: #46d573;
+}
+
+/* Синие choice для слайдов 7-9 */
+.slide[data-slide="7"] .choice,
+.slide[data-slide="8"] .choice,
+.slide[data-slide="9"] .choice {
+    background: rgba(30, 144, 255, 0.1);
+    border-color: #1e90ff;
+}
+
+.slide[data-slide="7"] .vs,
+.slide[data-slide="8"] .vs,
+.slide[data-slide="9"] .vs {
+    color: #1e90ff;
+}
+
 .choice ul {
     list-style: none;
     margin-top: 20px;
@@ -702,6 +982,22 @@ body {
     border-radius: 20px;
     border: 2px solid #ff6b3d;
     margin-top: 40px;
+}
+
+/* Зеленые call-to-action для слайдов 4-6 */
+.slide[data-slide="4"] .call-to-action,
+.slide[data-slide="5"] .call-to-action,
+.slide[data-slide="6"] .call-to-action {
+    background: rgba(70, 213, 115, 0.1);
+    border-color: #46d573;
+}
+
+/* Синие call-to-action для слайдов 7-9 */
+.slide[data-slide="7"] .call-to-action,
+.slide[data-slide="8"] .call-to-action,
+.slide[data-slide="9"] .call-to-action {
+    background: rgba(30, 144, 255, 0.1);
+    border-color: #1e90ff;
 }
 
 .call-to-action h2 {
@@ -747,6 +1043,37 @@ body {
     transform: scale(1.1);
 }
 
+/* Тематические цвета для навигации */
+.navigation.theme-green .nav-btn {
+    border-color: #46d573;
+    color: #46d573;
+}
+
+.navigation.theme-green .nav-btn:hover {
+    background: #46d573;
+    color: #000000;
+}
+
+.navigation.theme-blue .nav-btn {
+    border-color: #1e90ff;
+    color: #1e90ff;
+}
+
+.navigation.theme-blue .nav-btn:hover {
+    background: #1e90ff;
+    color: #000000;
+}
+
+.navigation.theme-orange .nav-btn {
+    border-color: #ff6b3d;
+    color: #ff6b3d;
+}
+
+.navigation.theme-orange .nav-btn:hover {
+    background: #ff6b3d;
+    color: #000000;
+}
+
 /* Hover Effects */
 .stat-item:hover,
 .timeline-item:hover,
@@ -756,6 +1083,50 @@ body {
 .method:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(255, 107, 61, 0.3);
+}
+
+/* Зеленые hover effects для слайдов 4-6 */
+.slide[data-slide="4"] .stat-item:hover,
+.slide[data-slide="4"] .timeline-item:hover,
+.slide[data-slide="4"] .disease-item:hover,
+.slide[data-slide="4"] .money-item:hover,
+.slide[data-slide="4"] .victim-group:hover,
+.slide[data-slide="4"] .method:hover,
+.slide[data-slide="5"] .stat-item:hover,
+.slide[data-slide="5"] .timeline-item:hover,
+.slide[data-slide="5"] .disease-item:hover,
+.slide[data-slide="5"] .money-item:hover,
+.slide[data-slide="5"] .victim-group:hover,
+.slide[data-slide="5"] .method:hover,
+.slide[data-slide="6"] .stat-item:hover,
+.slide[data-slide="6"] .timeline-item:hover,
+.slide[data-slide="6"] .disease-item:hover,
+.slide[data-slide="6"] .money-item:hover,
+.slide[data-slide="6"] .victim-group:hover,
+.slide[data-slide="6"] .method:hover {
+    box-shadow: 0 10px 30px rgba(70, 213, 115, 0.3);
+}
+
+/* Синие hover effects для слайдов 7-9 */
+.slide[data-slide="7"] .stat-item:hover,
+.slide[data-slide="7"] .timeline-item:hover,
+.slide[data-slide="7"] .disease-item:hover,
+.slide[data-slide="7"] .money-item:hover,
+.slide[data-slide="7"] .victim-group:hover,
+.slide[data-slide="7"] .method:hover,
+.slide[data-slide="8"] .stat-item:hover,
+.slide[data-slide="8"] .timeline-item:hover,
+.slide[data-slide="8"] .disease-item:hover,
+.slide[data-slide="8"] .money-item:hover,
+.slide[data-slide="8"] .victim-group:hover,
+.slide[data-slide="8"] .method:hover,
+.slide[data-slide="9"] .stat-item:hover,
+.slide[data-slide="9"] .timeline-item:hover,
+.slide[data-slide="9"] .disease-item:hover,
+.slide[data-slide="9"] .money-item:hover,
+.slide[data-slide="9"] .victim-group:hover,
+.slide[data-slide="9"] .method:hover {
+    box-shadow: 0 10px 30px rgba(30, 144, 255, 0.3);
 }
 
 .nav-btn:disabled {
@@ -782,8 +1153,21 @@ body {
 .progress-fill {
     height: 100%;
     background: #ff6b3d;
-    transition: width 0.6s ease;
+    transition: width 0.6s ease, background 0.3s ease;
     width: 11.11%;
+}
+
+/* Тематические цвета для progress-fill */
+.progress-fill.theme-green {
+    background: #46d573;
+}
+
+.progress-fill.theme-blue {
+    background: #1e90ff;
+}
+
+.progress-fill.theme-orange {
+    background: #ff6b3d;
 }
 
 /* Responsive Design */

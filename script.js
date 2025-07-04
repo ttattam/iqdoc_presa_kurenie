@@ -138,6 +138,29 @@ function updateSlideDisplay() {
     });
     
     currentSlideSpan.textContent = currentSlide;
+    updateThemeColors();
+}
+
+// Update theme colors based on current slide
+function updateThemeColors() {
+    const navigation = document.querySelector('.navigation');
+    const progressFill = document.querySelector('.progress-fill');
+    
+    // Remove existing color classes
+    navigation.classList.remove('theme-orange', 'theme-green', 'theme-blue');
+    progressFill.classList.remove('theme-orange', 'theme-green', 'theme-blue');
+    
+    // Add appropriate color class based on current slide
+    if (currentSlide >= 4 && currentSlide <= 6) {
+        navigation.classList.add('theme-green');
+        progressFill.classList.add('theme-green');
+    } else if (currentSlide >= 7 && currentSlide <= 9) {
+        navigation.classList.add('theme-blue');
+        progressFill.classList.add('theme-blue');
+    } else {
+        navigation.classList.add('theme-orange');
+        progressFill.classList.add('theme-orange');
+    }
 }
 
 // Update progress bar
